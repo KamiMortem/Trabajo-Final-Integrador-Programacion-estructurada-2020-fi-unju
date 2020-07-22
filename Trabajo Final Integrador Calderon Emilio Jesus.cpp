@@ -46,6 +46,7 @@ tTablero tablero;
 
 //fuciones procedimientos --------
 
+//funcion que comprueba si un numero es capicua
  bool capicua(int num) {
 
     if(num<10){
@@ -68,6 +69,7 @@ tTablero tablero;
     }
  }
 
+ //procedimiento que obtiene los divisores en un vector
  void divisores(int numero, int &cont, int divisor[100]){
     int resto;
     cont=0;
@@ -81,6 +83,7 @@ tTablero tablero;
         }
  }
 
+ //funcion que comprueba si un numero es un numero amigo
  bool numAmigo(int numero){
     int cont;
     int divisor[100];
@@ -105,6 +108,7 @@ tTablero tablero;
     }
  }
 
+ //funcion que comprueba si un numero es perfecto
  bool numPerfecto(int numero){
     int cont;
     int divisor[100];
@@ -152,6 +156,7 @@ tTablero tablero;
  // ---------------------
  // ---------------------
 
+ //procedimiento para comprobar el funcionamiento correcto
  void mostrarTablero(){
     for(int i=0;i<=9;i++){
         for(int j=0;j<=9;j++){
@@ -202,6 +207,7 @@ tTablero tablero;
     }
  }
 
+ //funcion que obtiene el puntaje dorado del juego
  int puntajeDorado(){
     int num,sumPrimo=0,sumCapicua=0,sumPrimoCapicua=0;
 
@@ -223,6 +229,7 @@ tTablero tablero;
     return num;
  }
 
+ //funcion que se encarga de coprobar si un valor ingresado no pertenece al tablero
  bool comprobarNumerosTabla(int numE){
     bool band=false;
 
@@ -236,6 +243,7 @@ tTablero tablero;
     return band;
  }
 
+ //procedimiento que genera el tablero
  void generarTablero(){
     int numRandom;
     srand(time(NULL));
@@ -363,6 +371,7 @@ tTablero tablero;
  return band;
  }
 
+ //procedimiento que registra los jugadores
  void registrarJugador(){
     int a;
     tcad nombre;
@@ -448,6 +457,7 @@ tTablero tablero;
     }
  }
 
+ //procedimiento que se encarrga de lanzar el dado y suma de puntos
  void lanzandoD(int jugadore1,int jugadore2){
     bool band1,bandTaF;
     int dado1, dado2;
